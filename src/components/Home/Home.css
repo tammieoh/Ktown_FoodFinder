@@ -6,6 +6,163 @@
 
 .Home {
   text-align: center;
+  margin: 30px 15px;
+  /* background-image: url(../../asset/images/Ktown.jpeg); */
+}
+html {
+  /* background-color: rgb(235, 231, 231); */
+  background-image: url(../../asset/images/ktown_2.png);
+}
+h1 {
+  background-color: rgb(172, 24, 24);
+  border: 1px solid black;
+  padding: 5px;
+  color: white;
+  margin-top: 0;
+  font-family: "Marker";
+  text-align: center;
+}
+
+h3 {
+  font-family: "Poppins_Medium";
+  font-size: 15px;
+}
+#greeting {
+  margin-bottom: 20px;
+  background-color: rgb(138, 221, 166);
+}
+#greeting h3 {
+  font-size: 25px;
+}
+#title {
+  margin-bottom: 20px;
+}
+
+#signin {
+  margin-bottom: 50px;
+}
+.homeImages {
+  column-count: 1;
+}
+.imgs {
+  margin-bottom: 30px;
+  break-inside: avoid-column;
+}
+/* #signinButton {
+  display: inline-block;
+  overflow: auto;
+} */
+#favorites {
+  margin-top: 30px;
+  padding: 10px 105px;
+  font-family: "Marker";
+  background-color: lightpink;
+  box-shadow: 5px 4px rgb(138, 136, 136);
+  cursor: pointer;
+  border-radius: 12px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: large;
+}
+#favorites:hover {
+  background-color: rgba(231, 189, 241, 0.925);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+/* .signInButton {
+  float: right;
+  position: static;
+  display: block;
+  margin: auto;
+  width: max-content;
+  color: black;
+} */
+#food_finder {
+  padding: 10px 30px;
+  color: rgb(255, 247, 247);
+  background-color: rgb(22, 129, 230);
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 5px 4px rgb(68, 63, 63);
+  font-family: "Marker";
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  /* left: 50%; */
+}
+#food_finder:hover {
+  background-color: rgba(150, 214, 243, 0.925);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#title {
+  /* text-align: center; */
+  margin: auto;
+}
+#logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0;
+  /* margin: auto; */
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  background-color: rgb(248, 62, 62);
+  width: 250px;
+  height: 250px;
+  display: block;
+  text-align: center;
+  border: 7px solid rgb(61, 158, 238);
+  padding: 10px;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .homeImages {
+    column-count: 2;
+  }
+  #food_finder {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  #greeting h3 {
+    font-size: 30px;
+  }
+  #logo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .homeImages {
+    column-count: 3;
+  }
+  #food_finder {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  #greeting h3 {
+    font-size: 35px;
+  }
+  .imgs {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    overflow: hidden;
+  }
 }
 
 /* .logo {

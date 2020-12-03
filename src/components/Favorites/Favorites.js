@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import './Favorites.css';
 import {withRouter} from "react-router";
-import queryString from 'query-string'
+// import queryString from 'query-string'
+import Cookies from "js-cookie";
 
 class Favorites extends Component {
     constructor() {
@@ -9,6 +10,7 @@ class Favorites extends Component {
         this.state = {
             restaurants: [],
             hasFavorites: false,
+
             // username: ""
         }
         this._homeClicked = this._homeClicked.bind(this)
@@ -62,14 +64,16 @@ class Favorites extends Component {
     }
     render() {
         return(
-            <div>
+            <div className="Favorites">
                 <h1>Favorites</h1>
-                <button onClick={this._homeClicked}>Home</button>
-                {this.state.hasFavorites ? this.state.restaurants.map((restaurant) => <div key={restaurant.restaurant_name}>
-                    <h2>{restaurant.restaurant_name}</h2>
-                    <img src={restaurant.images} alt={restaurant.restaurant_name}></img>
-                </div>)
-                 : <h2>No favorites added</h2>}
+                <button id="homeButton" onClick={this._homeClicked}>Home</button>
+                <div className="favorite_div">
+                    {this.state.hasFavorites ? this.state.restaurants.map((restaurant) => <div id="entry" key={restaurant.restaurant_name}>
+                        <h2>{restaurant.restaurant_name}</h2>
+                        <img src={restaurant.images} alt={restaurant.restaurant_name}></img>
+                    </div>)
+                    : <h2>No favorites added</h2>}
+                </div>
             </div>
         );
     }

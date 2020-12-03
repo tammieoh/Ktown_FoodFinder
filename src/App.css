@@ -13,15 +13,20 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@font-face {
+  font-family: "Marker";
+  src: url(./asset/fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins_Medium";
+  src: url(./asset/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Abril";
+  src: url(./asset/fonts/AbrilFatface-Regular.ttf);
+}
+.logo {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
