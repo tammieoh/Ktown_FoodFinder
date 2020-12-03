@@ -1,4 +1,7 @@
-﻿Database Dump File Instructions:
+Github Link:
+https://github.com/tammieoh/Ktown_FoodFinder
+
+Database Dump File Instructions:
 1. Server.js code is located in ktown_server/public folder.
 2. Run server on port 5000
 3. Must create a schema called “Ktown_finder”
